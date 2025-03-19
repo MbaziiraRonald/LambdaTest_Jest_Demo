@@ -1,0 +1,14 @@
+{
+ "version": "0.2.0",
+ "configurations": [
+   {
+     "type": "node", // Specifies the debugger type to use
+     "request": "launch", // Determines whether to launch a new process or attach to an existing one.
+     "name": "Debug Jest Tests", // Name of the configuration
+     "skipFiles": ["<node_internals>/**"], // Specifies files that the debugger should skip over during debugging.
+     "program": "${workspaceFolder}/node_modules/jest/bin/jest", // Path to Jest's executable.
+     "args": ["--runInBand"], // Command-line arguments to pass to the program.
+     "console": "integratedTerminal" // Specifies where to display debug output.
+   }
+ ]
+}
